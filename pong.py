@@ -63,7 +63,7 @@ def ball(x,y):
 
 #collision conditions
 def isCollision(x_2,y_2,ball_x,ball_y):
-    distance=math.sqrt((math.pow(x_2-ball_x,2))+(math.pow(y_2-ball_y,2)))
+    distance=math.sqrt((math.pow(x_2-ball_x,2))+(math.pow((y_2+40)-ball_y,2)))
     if distance < 27:
         return True
     else:
@@ -71,7 +71,7 @@ def isCollision(x_2,y_2,ball_x,ball_y):
 
 #collision b\n ball and baddle B
 def isCollision_2(x,y,ball_x,ball_y):
-    distance=math.sqrt((math.pow(x-ball_x,2))+(math.pow(y-ball_y,2)))
+    distance=math.sqrt((math.pow(x-ball_x,2))+(math.pow((y+40)-ball_y,2)))
     if distance < 50:
         return True
     else:
